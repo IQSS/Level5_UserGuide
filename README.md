@@ -15,7 +15,7 @@ This document instructs administrators and staff on using the level 5 workstatio
 
 ### A.1. Users & Groups
 
-Administrators belong to a built-in system group called wheel. The group has `sudo` privileges and can execute commands that normal users cannot. Never add a user to this group unless they have been properly cleared by EdLabs processes for administrator rights. See Section [A.1.3](#a13-addingdeleting-an-administrator) to grant administrator privileges to a user.
+Administrators belong to a built-in system group called wheel. The group has `sudo` privileges and can execute commands that normal users cannot. Never add a user to this group unless they have been properly cleared by EdLabs processes for administrator rights. See Section [A.1.3.](#a13-addingdeleting-an-administrator) to grant administrator privileges to a user.
 
 All EdLabs users should be joined to the general `edlabs` group. This provides access to all datasets, unless a dataset has been specifically assigned to a different group. A dataset will be assigned to a different group in the event that access needs to be restricted to a subset of users.
 
