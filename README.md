@@ -42,15 +42,15 @@ To add the existing user to multiple groups at once, comma separate (no space) t
 To remove a user from a group:  
 `sudo gpasswd -d [username] [group]`
 
-If making a new user an administrator, see Section [A.1.3](#a13-addingdeleting-an-administrator).
-
 #### A.1.2. New User Account Procedure
 
 All new user accounts must be approved by an EdLabs administrator. Account usernames should follow the pattern first initial plus last name (e.g. "Pat Smith" becomes "psmith").
 
 By default, all accounts must expire in one year. If the staff needs access beyond that, an administrator must extend the account. Both the administrator and user will receive notices beginning at 30 days before expiration, after which the account will become locked. The account can be extended at any point before or after expiration.
 
-Account passwords do not expire once set, although users can reset his or her password at any time (`passwd` from the terminal); if an administrator needs to reset a user’s password, follow the steps in Section [A.1.2.3](#a123-resetting-the-users-password).
+Account passwords do not expire once set, although users can reset his or her password at any time (`passwd` from the terminal); if an administrator needs to reset a user’s password, follow the steps in Section [A.1.2.3.](#a123-resetting-the-users-password)
+
+If making a new user an administrator, see Section [A.1.3.](#a13-addingdeleting-an-administrator)
 
 ##### A.1.2.1. Create a New EdLabs User
 
@@ -89,7 +89,7 @@ The "wheel" group is a built-in group that has administrator privileges.
 * To add a user to the admin group: `sudo usermod -aG wheel [username]`
 * To remove a user from the admin group: `sudo gpasswd -d [username] wheel`
 
-##### A.1.1.2. Deliver Admin Mail to New User
+##### A.1.3.2. Deliver Admin Mail to New User
 
 A new administrator should also get a copy of the mail that is sent to the root user. This functionality is a requirement of level 5 machines.
 
@@ -149,7 +149,7 @@ A dataset should be securely erased (as root) when it’s no longer needed. (Thi
 2. `srm -rf /mnt/edlabs_data/[dataset]`
 3. `exit`
 
-To remove users from a group, see Section A.1.1.4. To remove users from the system, see Section [A.1.4.](#a14-removing-a-user)
+To remove users from a group, see Section [A.1.1.3.](#a113-removing-a-user-from-a-group) To remove users from the system, see Section [A.1.4.](#a14-removing-a-user)
 
 
 ### A.3. Security
