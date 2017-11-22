@@ -107,7 +107,9 @@ A new administrator should also get a copy of the mail that is sent to the root 
 
 #### A.1.4. Removing A User
 
-TODO
+1. Make sure you have saved any files from the user's home directory that you want to keep.
+2. `pseudo`
+3. `userdel -r [username]`
 
 
 ### A.2. Data & Permissions
@@ -246,7 +248,7 @@ All accounts expire after one year, and require an administrator to extend by an
 
 #### B.1.2. Reading Mail
 
-All account receive mail; regular users, for example, will be notified of pending account expiration. Administrators receive logs and account expiration notices as well. Users can read mail through the Thunderbird application.
+All accounts receive mail; regular users, for example, will be notified of pending account expiration. Administrators receive logs and account expiration notices as well. Users can read mail through the Thunderbird application.
 
 ##### B.1.2.1. Configuring Thunderbird
 
@@ -340,6 +342,6 @@ A system script automates the entire process, no matter which version IronKey yo
 
 Use the menu to:
 
-* 1) unlock the IronKey
-* 5) re-lock the IronKey
-* 9) exit the script
+* Option 1: unlock the IronKey
+* Option 5: re-lock the IronKey
+* Option 9: exit the script
