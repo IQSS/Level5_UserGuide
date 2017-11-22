@@ -19,7 +19,7 @@ Administrators belong to a built-in system group called wheel. The group has `su
 
 All EdLabs users should be joined to the general `edlabs` group. This provides access to all datasets, unless a dataset has been specifically assigned to a different group. A dataset will be assigned to a different group in the event that access needs to be restricted to a subset of users.
 
-For stricter access to a dataset, a new group should be created. A good practice is to use the same name as the data for the group name, prefixed with "edlabs". For example, a dataset `/mnt/edlabs_data/govdata` would belong to a group `edlabs_govdata`. For setting up a new dataset, see Section [A.2.1.](#a21-creating-a-new-project).
+For stricter access to a dataset, a new group should be created. A good practice is to use the same name as the data for the group name, prefixed with "edlabs". For example, a dataset `/mnt/edlabs_data/govdata` would belong to a group `edlabs_govdata`. For setting up a new dataset, see Section [A.2.1.](#a21-creating-a-new-project)
 
 #### A.1.1. Group Commands
 
