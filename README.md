@@ -67,8 +67,7 @@ If the user is not added to a group at this time, see Section [A.1.1.2.](#a112-a
 Set the account to expire after one year. _This step must not be skipped, and must be applied to all accounts._  
 `extend [username]`
 
-**Note:** The `extend` command is a global alias:  
-`` `sudo chage -E `date -d "1 year" +%Y-%m-%d` [username]` ``
+**Note:** The `extend` command is a global alias for `` sudo chage -E `date -d "1 year" +%Y-%m-%d` ``.
 
 ##### A.1.2.3. Resetting The User's Password
 
@@ -77,8 +76,7 @@ All new users must change their password on first log in. These commands set a t
 1. `sudo mkpasswd [username]`
 2. `frpasswd [username]`
 
-**Note:** The frpasswd command is a global alias:  
-`sudo chage -d 0 [username]`
+**Note:** The `frpasswd` command is a global alias for `sudo chage -d 0`.
 
 After creating the account, the new user should log in; they will be prompted to reset their password. Once the desktop environment has loaded, click through the intro screens, then the user should configure Thunderbird to receive system mail, see Section [B.1.2.1.](#b121-configuring-thunderbird)
 
